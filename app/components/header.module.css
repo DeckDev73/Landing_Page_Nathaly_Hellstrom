@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   padding: 10px 20px;
-/*  position: fixed; */ /* En caso de que el menú se deba desplazar junto al scroll */
-/*  z-index: 1000; */
+  position: fixed; /* En caso de que el menú se deba desplazar junto al scroll */
+  z-index: 1000; 
+  width: 100%;
 }
 .headerLeft,
 .headerCenter,
@@ -39,7 +40,7 @@
 
 
 .headerRight {
-   flex: 1;
+  flex: 1;
   display: flex;
   justify-content: flex-end;
   
