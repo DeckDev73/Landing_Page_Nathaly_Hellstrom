@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+/*  position: fixed; */ /* En caso de que el menú se deba desplazar junto al scroll */
+/*  z-index: 1000; */
+}
+.headerLeft,
+.headerCenter,
+.headerRight {
+  flex: 0 0 33.33%; /* con estos calculos podremos hacer una division uniforme en el header*/
+  box-sizing: border-box; 
+}
+
+.headerLeft{
+  
+  background-color: #9e0000;
+  width: 100px;  
+  height: 100px;
+}
+
+
+.headerCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logoImg {
+  background-color: #fcd5ce; 
+  border-radius: 50%; 
+  width: 60px;       
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+.headerRight {
+   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.headerRight ul {
+  display: flex;
+  gap: 70px;
+  list-style: none;
+  margin: 0;
+  padding-right: 60px;
+}
+
+.headerRight a {
+  text-decoration: none;
+  color: #333;
+}
+
+.headerRight a:hover {
+  color: #555;
+}

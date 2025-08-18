@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         <h1>HELLO</h1>
         <Link href="/line_time">
-          Ir a Línea de Tiempo
+          Ir a Línea de Tiemp
         </Link>
       </main>
     </div>
