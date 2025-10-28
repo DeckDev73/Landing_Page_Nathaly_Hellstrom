@@ -1,0 +1,272 @@
+/* --- Estructura base --- */
+.header {
+  display: flex;
+  top: 20px;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 40px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+/* --- Logo --- */
+.logoContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* ✅ centra perfectamente el logo en ambas direcciones */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.logoImg {
+  background-color: #fcf5ef;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/* --- Menú principal --- */
+.navMenu {
+  margin-left: auto; /* ✅ Empuja el menú completamente hacia la derecha */
+  display: flex;
+  align-items: center;
+}
+
+.navMenu ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+
+  padding: 0;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: #e7d5c8;
+}
+
+.desktopLang {
+  display: block;
+}
+
+.mobileLang {
+  display: none;
+}
+
+/* --- Botón hamburguesa --- */
+.menuToggle {
+  position: absolute;
+  text-align: center;
+  right: 40px;
+  top: 40px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  border: 2px solid #a26a4f;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.bar1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.bar2 {
+  opacity: 0;
+}
+.bar3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
+
+
+
+/* --- Responsive --- */
+@media (max-width: 1500px) {
+  .menuToggle {
+    display: flex;
+  }
+
+  .navMenu {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 220px;
+    background-color: #fcf5ef;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: -2.5px 2.5px 5px rgba(0, 0, 0, 0.144);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .logoContainer {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logoImg {
+    width: 80px; /* opcional: puedes mantener 90px si prefieres */
+    height: 80px;
+    padding: 12px;
+  }
+
+  .navMenu.showMenu {
+    transform: translateX(0);
+  }
+
+  .navMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    margin: 0;
+    gap: 0;
+  }
+
+  .navMenu ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #c4a28a;
+    padding: 15px 0;
+    box-sizing: border-box;
+  }
+
+  .navMenu ul li:last-child {
+    border-bottom: none;
+  }
+
+  .navMenu a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    color: #a26a4f;
+  }
+
+  .desktopLang {
+    display: none;
+  }
+
+  .mobileLang {
+    display: block;
+  }
+}
+
+/* ===========================================================
+   📱 3️⃣ Tablet / Móvil (≤992px)
+   Logo a la izquierda + misma hamburguesa original + fondo beige
+=========================================================== */
+@media (max-width: 992px) {
+  .header {
+    padding: 45px 0;
+    background-color: #fcf5ef;
+  }
+
+  .menuToggle {
+    display: flex;
+  }
+
+  .logoContainer {
+    position: absolute;
+    top: 10px;
+    left: 30px; /* ✅ logo a la izquierda */
+    transform: none; /* elimina centrado */
+  }
+
+  .logoImg {
+    width: 75px;
+    height: 75px;
+    padding: 12px;
+  }
+
+  .navMenu {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 220px;
+    background-color: #fcf5ef;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .navMenu.showMenu {
+    transform: translateX(0);
+  }
+
+  .navMenu ul {
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .navMenu ul li {
+    text-align: center;
+    border-bottom: 2px solid #c4a28a;
+    padding: 15px 0;
+  }
+
+  .navMenu ul li:last-child {
+    border-bottom: none;
+  }
+
+  .navMenu a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    color: #a26a4f;
+  }
+
+  .desktopLang {
+    display: none;
+  }
+
+  .mobileLang {
+    display: block;
+    margin-top: 10px;
+  }
+}

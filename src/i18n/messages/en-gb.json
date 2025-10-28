@@ -1,0 +1,296 @@
+{
+  "Header": {
+    "home": "Home",
+    "project": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+
+  "HomePage": {
+    "seo": {
+      "title": "Home - Nathaly Hellström",
+      "description": "Consumer Psychology & Storytelling Strategist based in Stockholm. UX design, marketing strategy & multilingual expertise.",
+      "keywords": [
+        "consumer psychology strategist",
+        "storytelling strategist",
+        "UX design Stockholm",
+        "marketing strategy Sweden",
+        "multilingual UX specialist",
+        "brand storytelling expert"
+      ],
+      "authors": [
+        {
+          "name": "Nathaly Hellström",
+          "url": "https://www.linkedin.com/in/nathaly-hellström-b80796224"
+        }
+      ],
+      "robots": "index, follow",
+      "alternates": {
+        "canonical": "http://localhost:3000/en-GB",
+        "languages": {
+          "en-GB": "https://www.nathalyhellstrom.com/en-GB",
+          "sv": "http://localhost:3000/sv"
+        },
+        "x-default": "http://localhost:3000/en-GB"
+      },
+      "openGraph": {
+        "title": "Consumer Psychology & Storytelling Strategist - Nathaly Hellström",
+        "description": "UX design, consumer psychology & storytelling strategy based in Stockholm.",
+        "url": "https://www.nathalyhellstrom.com/en-GB",
+        "siteName": "Nathaly Hellström",
+        "type": "website",
+        "locale": "en_GB",
+        "images": [
+          {
+            "url": "https://www.nathalyhellstrom.com/og-image.jpg",
+            "width": 1200,
+            "height": 630,
+            "alt": "Portrait of Nathaly Hellström, Consumer Psychology & Storytelling Strategist in Stockholm"
+          }
+        ]
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://www.nathalyhellstrom.com/",
+          "name": "Nathaly Hellström"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Nathaly Hellström",
+          "jobTitle": "Consumer Psychology & Storytelling Strategist",
+          "url": "https://www.nathalyhellstrom.com/en-GB",
+          "image": "https://www.nathalyhellstrom.com/og-image.jpg",
+          "email": "mailto:Nathaly@gugo.se",
+          "sameAs": [
+            "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+            "https://www.instagram.com/vadhanderistockholm.se"
+          ]
+        }
+      ],
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+        "instagram": "https://www.instagram.com/vadhanderistockholm.se",
+        "email": "Nathaly@gugo.se"
+      }
+    },
+
+    "hero": {
+        "title": "Professional Consumer<br></br>psychology strategist",
+        "subtitle": "Nathaly Hellström",
+        "hi":"Hi!",
+        "im":"I'm",
+        "description": "I am a Consumer Psychology & Storytelling Strategist based in Stockholm, passionate about crafting meaningful brand experiences through UX design, consumer psychology, and content creation. With ten years of experience in customer care and four years in UX and marketing strategy, I specialise in transforming client ideas into engaging, results-driven solutions. <br></br><br></br>My career began in the aviation industry, where I spent seven years as a flight attendant and three years as a cabin chief with Avianca Colombia. This role provided me with a profound understanding of customer service, human behaviour, and the importance of delivering outstanding user experiences. <br></br><br></br>Driven by a desire for new challenges, I relocated to Sweden six years ago, broadening my expertise in digital marketing, UX research, content strategy, and storytelling. Since 2021, I have been leading Vad händer i Sverige, a marketing and events agency, where I merge creativity with strategic thinking to build impactful digital narratives and unforgettable brand experiences. <br></br><br></br>At Vad händer i Sverige, I have had the privilege of working closely with clients to lead marketing strategies and deliver high-impact campaigns. These initiatives have not only elevated brand presence but also generated millions of euros in sales—demonstrating the power of strategic storytelling and UX in driving business success. <br></br><br></br>I am currently in my eighth semester of a Psychology degree, specialising in consumer psychology. My academic background provides me with deep insights into human behaviour, decision-making processes, and emotional triggers, which I apply strategically to UX design, marketing, and brand positioning. <br></br><br></br>Fluent in Spanish, English, and Swedish, I am able to navigate multicultural environments and build strong connections across diverse markets and industries. My passion for music, photography, and creativity is reflected in every project I undertake. <br></br><br></br>I am always seeking new challenges and opportunities to innovate, create, and connect."
+    }
+  },
+
+
+
+  "ContactPage": {
+    "seo": {
+      "title": "Contact - Nathaly Hellström",
+      "description": "Get in touch with Nathaly Hellström for collaborations, inquiries, or UX & storytelling projects.",
+      "keywords": [
+        "contact",
+        "Nathaly Hellstrom",
+        "storytelling strategist contact",
+        "consumer psychology strategist Stockholm",
+        "UX collaboration",
+        "marketing strategy Sweden"
+      ],
+      "authors": [
+        {
+          "name": "Nathaly Hellström",
+          "url": "https://www.linkedin.com/in/nathaly-hellström-b80796224"
+        }
+      ],
+      "robots": "index, follow",
+      "alternates": {
+        "canonical": "https://www.nathalyhellstrom.com/en-GB/contact",
+        "languages": {
+          "en-GB": "https://www.nathalyhellstrom.com/en-GB/contact",
+          "sv": "https://www.nathalyhellstrom.com/sv/contact"
+        },
+        "x-default": "https://www.nathalyhellstrom.com/en-GB/contact"
+      },
+      "openGraph": {
+        "title": "Contact - Nathaly Hellström",
+        "description": "Let's connect — reach out for collaborations, UX design, and storytelling strategy inquiries.",
+        "url": "https://www.nathalyhellstrom.com/en-GB/contact",
+        "siteName": "Nathaly Hellström",
+        "type": "website",
+        "locale": "en_GB",
+        "images": [
+          {
+            "url": "https://www.nathalyhellstrom.com/og-image.jpg",
+            "width": 1200,
+            "height": 630,
+            "alt": "Contact Nathaly Hellström - UX & Storytelling Strategist"
+          }
+        ]
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact - Nathaly Hellström",
+          "description": "Official contact page for Nathaly Hellström, Consumer Psychology & Storytelling Strategist based in Stockholm.",
+          "url": "https://www.nathalyhellstrom.com/en-GB/contact"
+        }
+      ],
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+        "instagram": "https://www.instagram.com/vadhanderistockholm.se",
+        "email": "Nathaly@gugo.se"
+      }
+    },
+
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Every brand has a story waiting to be told—I bring it to life.",
+      "description": "Whether you are looking to  refine your brand's message, enhance user experience, or craft powerful marketing strategies that truly connect and convert, I would love to hear your vision.<br></br>Let's turn ideas into impactful experiences that inspire, engage, and deliver results. Send me a message, and let's create something extraordinary together!",
+      "form": {
+        "title": "Send a Message",
+        "name": "Name",
+        "interested": "What are you interested in?",
+        "option1": "UX Design",
+        "option2": "Content Creation",
+        "option3": "Digital Marketing",
+        "message": "Message"
+      }
+    }
+  },
+
+  "About": {
+    "seo": {
+      "title": "About - Nathaly Hellström",
+      "description": "Learn more about Nathaly Hellström — a Consumer Psychology & Storytelling Strategist based in Stockholm, specializing in UX design, marketing strategy, and brand storytelling.",
+      "keywords": [
+        "about Nathaly Hellstrom",
+        "consumer psychology strategist",
+        "storytelling strategist Stockholm",
+        "UX designer Sweden",
+        "marketing strategist Sweden",
+        "multilingual UX expert",
+        "brand storytelling professional"
+      ],
+      "authors": [
+        {
+          "name": "Nathaly Hellström",
+          "url": "https://www.linkedin.com/in/nathaly-hellström-b80796224"
+        }
+      ],
+      "robots": "index, follow",
+      "alternates": {
+        "canonical": "https://www.nathalyhellstrom.com/en-GB/about",
+        "languages": {
+          "en-GB": "https://www.nathalyhellstrom.com/en-GB/about",
+          "sv": "https://www.nathalyhellstrom.com/sv/about"
+        },
+        "x-default": "https://www.nathalyhellstrom.com/en-GB/about"
+      },
+      "openGraph": {
+        "title": "About - Nathaly Hellström",
+        "description": "Discover the story behind Nathaly Hellström — Consumer Psychology & Storytelling Strategist in Stockholm, blending UX, marketing, and behavioral insights.",
+        "url": "https://www.nathalyhellstrom.com/en-GB/about",
+        "siteName": "Nathaly Hellström",
+        "type": "website",
+        "locale": "en_GB",
+        "images": [
+          {
+            "url": "https://www.nathalyhellstrom.com/og-image.jpg",
+            "width": 1200,
+            "height": 630,
+            "alt": "Portrait of Nathaly Hellström, UX & Storytelling Strategist based in Stockholm"
+          }
+        ]
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About - Nathaly Hellström",
+          "description": "Official About page for Nathaly Hellström, Consumer Psychology & Storytelling Strategist based in Stockholm, specializing in UX design, marketing strategy, and brand storytelling.",
+          "url": "https://www.nathalyhellstrom.com/en-GB/about"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Nathaly Hellström",
+          "jobTitle": "Consumer Psychology & Storytelling Strategist",
+          "url": "https://www.nathalyhellstrom.com/en-GB",
+          "image": "https://www.nathalyhellstrom.com/og-image.jpg",
+          "email": "mailto:Nathaly@gugo.se",
+          "sameAs": [
+            "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+            "https://www.instagram.com/vadhanderistockholm.se"
+          ]
+        }
+      ],
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+        "instagram": "https://www.instagram.com/vadhanderistockholm.se",
+        "email": "Nathaly@gugo.se"
+      }
+    },
+  
+    "timeline": [
+      {
+        "year": "2009 – 2010 (Completed)",
+        "title": "Flight Attendant Technician",
+        "text": "Escuela de Aviación del Pacífico | Pereira, Risaralda, Colombia",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "Bogotá, Colombia | 2010 – 2018",
+        "title": "Avianca – Flight Attendant / Cabin Purser",
+        "text": "Four years as National Cabin Purser and International Flight Attendant.<br />Recognised for academic excellence in safety procedures and customer service.<br />Developed strong skills in leadership, crisis management, and premium guest experience.",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "2017 – 2019 (Five semesters completed – unfinished due to relocation)",
+        "title": "International Business Administration",
+        "text": "Universidad EAN | Bogotá, Colombia",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "Stockholm, Sweden | 2019 – 2020",
+        "title": "Opera Källaren – Waitress",
+        "text": "Delivered high-end service in the VIP section at Friends Arena, catering to distinguished guests.<br />Strengthened expertise in hospitality, attention to detail, and customer engagement.",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "Bogotá, Colombia | 2020 – 2021",
+        "title": "Medicare – Customer Support",
+        "text": "Assisted Medicare users with efficiency and empathy; excelled in user support systems, problem-solving, and customer relations.",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "2021 – Present (8th semester)",
+        "title": "Psychology",
+        "text": "Universidad EAN | Bogotá, Colombia",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "2022 (Completed)",
+        "title": "UX Design",
+        "text": "Coursera – Google Online (Certificate available)",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "2022 (Completed)",
+        "title": "Project Management",
+        "text": "Coursera – Google Online (Certificate available)",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "Stockholm, Sweden | 2022 – Present",
+        "title": "GUGO & Vad händer i Sverige – Consumer Psych Strategist",
+        "text": "Led UX, storytelling, and consumer-psychology-driven marketing campaigns, generating millions in client sales. Expert in content strategy and brand experience optimisation.",
+        "image": "/foto_1.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+/* --- Contenedor del dropdown --- */
+.dropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+/* --- Botón principal --- */
+.dropdownButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 4px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.dropdownButton:hover {
+  transform: scale(1.1);
+  opacity: 0.9; /* leve aclarado al pasar el cursor */
+}
+
+/* --- Menú desplegable --- */
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  z-index: 10;
+}
+
+/* --- Cada opción de idioma --- */
+.dropdownItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none; /* ❌ sin bordes */
+  border-radius: 50%;
+  background: transparent;
+  padding: 2px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0.5; /* 🌫️ por defecto, idioma no activo es semitransparente */
+}
+
+.dropdownItem img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*  Hover: se aclara y crece un poco */
+.dropdownItem:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/*  Idioma activo */
+.active {
+  opacity: 1; /* colores originales */
+  transform: scale(1.1);
+}
+
+/*  Versión menú móvil */
+.mobileLangContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 32px;
+
+}

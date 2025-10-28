@@ -1,0 +1,299 @@
+{
+  "Header": {
+    "home": "Inicio",
+    "project": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+
+  "HomePage": {
+    "seo": {
+      "title": "Inicio - Nathaly Hellström",
+      "description": "Estratega en Psicología del Consumidor y Storytelling con sede en Estocolmo. Diseño UX, estrategia de marketing y experiencia multilingüe.",
+      "keywords": [
+        "estratega en psicología del consumidor",
+        "estratega en storytelling",
+        "diseño UX Estocolmo",
+        "estrategia de marketing Suecia",
+        "especialista UX multilingüe",
+        "experta en storytelling de marca"
+      ],
+      "authors": [
+        {
+          "name": "Nathaly Hellström",
+          "url": "https://www.linkedin.com/in/nathaly-hellström-b80796224"
+        }
+      ],
+      "robots": "index, follow",
+      "alternates": {
+        "canonical": "http://localhost:3000/es",
+        "languages": {
+          "es": "https://www.nathalyhellstrom.com/es",
+          "en-GB": "https://www.nathalyhellstrom.com/en-GB",
+          "sv": "http://localhost:3000/sv"
+        },
+        "x-default": "http://localhost:3000/es"
+      },
+      "openGraph": {
+        "title": "Estratega en Psicología del Consumidor y Storytelling - Nathaly Hellström",
+        "description": "Diseño UX, psicología del consumidor y estrategia de storytelling desde Estocolmo.",
+        "url": "https://www.nathalyhellstrom.com/es",
+        "siteName": "Nathaly Hellström",
+        "type": "website",
+        "locale": "es_ES",
+        "images": [
+          {
+            "url": "https://www.nathalyhellstrom.com/og-image.jpg",
+            "width": 1200,
+            "height": 630,
+            "alt": "Retrato de Nathaly Hellström, Estratega en Psicología del Consumidor y Storytelling en Estocolmo"
+          }
+        ]
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://www.nathalyhellstrom.com/",
+          "name": "Nathaly Hellström"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Nathaly Hellström",
+          "jobTitle": "Estratega en Psicología del Consumidor y Storytelling",
+          "url": "https://www.nathalyhellstrom.com/es",
+          "image": "https://www.nathalyhellstrom.com/og-image.jpg",
+          "email": "mailto:Nathaly@gugo.se",
+          "sameAs": [
+            "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+            "https://www.instagram.com/vadhanderistockholm.se"
+          ]
+        }
+      ],
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+        "instagram": "https://www.instagram.com/vadhanderistockholm.se",
+        "email": "Nathaly@gugo.se"
+      }
+    },
+
+    "hero": {
+      "title": "Estratega Profesional<br></br>Psicología del Consumidor",
+      "subtitle": "Nathaly Hellström",
+      "hi": "Hola!",
+      "im":"Soy",
+      "description": "Soy Estratega en Psicología del Consumidor y Storytelling, con base en Estocolmo, apasionada por crear experiencias de marca significativas a través del diseño UX, la psicología del consumidor y la creación de contenido. Con diez años de experiencia en servicio al cliente y cuatro años en estrategia de UX y marketing, me especializo en transformar ideas en soluciones atractivas, estratégicas y orientadas a resultados. <br></br><br></br>Mi carrera comenzó en la industria de la aviación, donde trabajé siete años como auxiliar de vuelo y tres años como jefa de cabina en Avianca Colombia. Esta experiencia me brindó un entendimiento profundo del servicio al cliente, el comportamiento humano y la importancia de ofrecer experiencias excepcionales a los usuarios. <br></br><br></br>Impulsada por el deseo de asumir nuevos retos, me mudé a Suecia hace seis años, ampliando mi experiencia en marketing digital, investigación UX, estrategia de contenidos y storytelling. Desde 2021 lidero Vad händer i Sverige, una agencia de marketing y eventos donde combino la creatividad con el pensamiento estratégico para construir narrativas digitales impactantes y experiencias de marca inolvidables. <br></br><br></br>En Vad händer i Sverige he tenido el privilegio de trabajar de cerca con clientes, liderando sus estrategias de marketing y desarrollando campañas de alto impacto. Estas iniciativas no solo han elevado la presencia de marca, sino que también han generado millones de euros en ventas, demostrando el poder del storytelling estratégico y del UX en el éxito empresarial. <br></br><br></br>Actualmente curso octavo semestre de Psicología, con énfasis en psicología del consumidor. Mi formación académica me brinda una comprensión profunda del comportamiento humano, los procesos de toma de decisiones y los detonantes emocionales, que aplico de manera estratégica en el diseño UX, el marketing y el posicionamiento de marca. <br></br><br></br>Domino español, inglés y sueco, lo que me permite desenvolverme en entornos multiculturales y construir conexiones sólidas en diferentes mercados e industrias. Mi pasión por la música, la fotografía y la creatividad se refleja en cada proyecto que emprendo. <br></br><br></br>Siempre estoy en búsqueda de nuevos retos y oportunidades para innovar, crear y conectar."
+    }
+  },
+
+  "ContactPage": {
+    "seo": {
+      "title": "Contacto - Nathaly Hellström",
+      "description": "Ponte en contacto con Nathaly Hellström para colaboraciones, consultas o proyectos de UX y storytelling.",
+      "keywords": [
+        "contacto",
+        "Nathaly Hellström",
+        "contacto estratega en storytelling",
+        "estratega en psicología del consumidor Estocolmo",
+        "colaboración UX",
+        "estrategia de marketing Suecia"
+      ],
+      "authors": [
+        {
+          "name": "Nathaly Hellström",
+          "url": "https://www.linkedin.com/in/nathaly-hellström-b80796224"
+        }
+      ],
+      "robots": "index, follow",
+      "alternates": {
+        "canonical": "https://www.nathalyhellstrom.com/es/contacto",
+        "languages": {
+          "es": "https://www.nathalyhellstrom.com/es/contacto",
+          "en-GB": "https://www.nathalyhellstrom.com/en-GB/contact",
+          "sv": "https://www.nathalyhellstrom.com/sv/contact"
+        },
+        "x-default": "https://www.nathalyhellstrom.com/es/contacto"
+      },
+      "openGraph": {
+        "title": "Contacto - Nathaly Hellström",
+        "description": "Conectemos — escríbeme para colaboraciones, diseño UX y estrategias de storytelling.",
+        "url": "https://www.nathalyhellstrom.com/es/contacto",
+        "siteName": "Nathaly Hellström",
+        "type": "website",
+        "locale": "es_ES",
+        "images": [
+          {
+            "url": "https://www.nathalyhellstrom.com/og-image.jpg",
+            "width": 1200,
+            "height": 630,
+            "alt": "Contacto con Nathaly Hellström - Estratega UX y Storytelling"
+          }
+        ]
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contacto - Nathaly Hellström",
+          "description": "Página oficial de contacto de Nathaly Hellström, Estratega en Psicología del Consumidor y Storytelling con base en Estocolmo.",
+          "url": "https://www.nathalyhellstrom.com/es/contacto"
+        }
+      ],
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+        "instagram": "https://www.instagram.com/vadhanderistockholm.se",
+        "email": "Nathaly@gugo.se"
+      }
+    },
+
+    "hero": {
+      "title": "Contacto",
+      "subtitle": "Cada marca tiene una historia que merece ser contada—yo estoy aquí para darle vida.",
+      "description": "Ya sea que busques refinar el mensaje de tu marca, mejorar la experiencia de usuario o diseñar estrategias de marketing que realmente conecten y conviertan, me encantaría conocer tu visión.<br></br>Convirtamos ideas en experiencias memorables que inspiren, cautiven y generen resultados. Escríbeme y creemos algo extraordinario juntas/os.",
+      "form": {
+        "title": "Enviar un mensaje",
+        "name": "Nombre",
+        "interested": "¿En qué estás interesado/a?",
+        "option1": "Diseño UX",
+        "option2": "Creación de Contenido",
+        "option3": "Marketing Digital",
+        "message": "Mensaje"
+      }
+    }
+  },
+
+  "About": {
+    "seo": {
+      "title": "Sobre mí - Nathaly Hellström",
+      "description": "Conoce más sobre Nathaly Hellström — Estratega en Psicología del Consumidor y Storytelling radicada en Estocolmo, especializada en diseño UX, estrategia de marketing y narrativas de marca.",
+      "keywords": [
+        "sobre Nathaly Hellström",
+        "estratega en psicología del consumidor",
+        "estratega de storytelling Estocolmo",
+        "diseñadora UX Suecia",
+        "estratega de marketing Suecia",
+        "experta UX multilingüe",
+        "profesional en storytelling de marca"
+      ],
+      "authors": [
+        {
+          "name": "Nathaly Hellström",
+          "url": "https://www.linkedin.com/in/nathaly-hellström-b80796224"
+        }
+      ],
+      "robots": "index, follow",
+      "alternates": {
+        "canonical": "https://www.nathalyhellstrom.com/es/about",
+        "languages": {
+          "en-GB": "https://www.nathalyhellstrom.com/en-GB/about",
+          "sv": "https://www.nathalyhellstrom.com/sv/about",
+          "es": "https://www.nathalyhellstrom.com/es/about"
+        },
+        "x-default": "https://www.nathalyhellstrom.com/en-GB/about"
+      },
+      "openGraph": {
+        "title": "Sobre mí - Nathaly Hellström",
+        "description": "Descubre la historia detrás de Nathaly Hellström — Estratega en Psicología del Consumidor y Storytelling en Estocolmo, combinando UX, marketing e insights de comportamiento.",
+        "url": "https://www.nathalyhellstrom.com/es/about",
+        "siteName": "Nathaly Hellström",
+        "type": "website",
+        "locale": "es_ES",
+        "images": [
+          {
+            "url": "https://www.nathalyhellstrom.com/og-image.jpg",
+            "width": 1200,
+            "height": 630,
+            "alt": "Retrato de Nathaly Hellström, estratega UX y storytelling radicada en Estocolmo"
+          }
+        ]
+      },
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "Sobre mí - Nathaly Hellström",
+          "description": "Página oficial de Nathaly Hellström, Estratega en Psicología del Consumidor y Storytelling radicada en Estocolmo, especializada en diseño UX, estrategia de marketing y narrativa de marca.",
+          "url": "https://www.nathalyhellstrom.com/es/about"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Nathaly Hellström",
+          "jobTitle": "Estratega en Psicología del Consumidor y Storytelling",
+          "url": "https://www.nathalyhellstrom.com/es",
+          "image": "https://www.nathalyhellstrom.com/og-image.jpg",
+          "email": "mailto:Nathaly@gugo.se",
+          "sameAs": [
+            "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+            "https://www.instagram.com/vadhanderistockholm.se"
+          ]
+        }
+      ],
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/nathaly-hellström-b80796224",
+        "instagram": "https://www.instagram.com/vadhanderistockholm.se",
+        "email": "Nathaly@gugo.se"
+      }
+    },
+    
+    "timeline": [
+      {
+        "year": "2009 – 2010 (Finalizado)",
+        "title": "Técnico en Auxiliar de Vuelo",
+        "text": "Escuela de Aviación del Pacífico | Pereira, Risaralda, Colombia",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "Bogotá, Colombia | 2010 – 2018",
+        "title": "Avianca – Auxiliar de Vuelo / Jefa de Cabina",
+        "text": "Cuatro años como jefa de cabina nacional y auxiliar de vuelo internacional.<br />Reconocida por la excelencia académica en procedimientos de seguridad y servicio al cliente.<br />Desarrolló sólidas habilidades en liderazgo, gestión de crisis y experiencia premium de pasajeros.",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "2017 – 2019 (Cinco semestres completados – inconcluso por mudanza)",
+        "title": "Administración de Negocios Internacionales",
+        "text": "Universidad EAN | Bogotá, Colombia",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "Estocolmo, Suecia | 2019 – 2020",
+        "title": "Opera Källaren – Mesera",
+        "text": "Brindó un servicio de alto nivel en la sección VIP del Friends Arena, atendiendo a invitados distinguidos.<br />Fortaleció su experiencia en hospitalidad, atención al detalle y compromiso con los clientes.",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "Bogotá, Colombia | 2020 – 2021",
+        "title": "Medicare – Soporte al Cliente",
+        "text": "Asistió a los usuarios de Medicare con eficiencia y empatía; destacó en sistemas de soporte al usuario, resolución de problemas y relaciones con los clientes.",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "2021 – Actualidad (Octavo semestre)",
+        "title": "Psicología",
+        "text": "Universidad EAN | Bogotá, Colombia",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "2022 (Finalizado)",
+        "title": "Diseño UX",
+        "text": "Coursera – Google Online (Certificado disponible)",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "2022 (Finalizado)",
+        "title": "Gestión de Proyectos",
+        "text": "Coursera – Google Online (Certificado disponible)",
+        "image": "/foto_1.jpg"
+      },
+      {
+        "year": "Estocolmo, Suecia | 2022 – Actualidad",
+        "title": "GUGO & Vad händer i Sverige – Estratega en Psicología del Consumidor",
+        "text": "Lideró campañas de UX, storytelling y marketing impulsadas por la psicología del consumidor, generando millones en ventas para los clientes. Experta en estrategia de contenidos y optimización de experiencias de marca.",
+        "image": "/foto_1.jpg"
+      }
+    ]
+
+  }
+
+}

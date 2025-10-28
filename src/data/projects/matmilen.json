@@ -1,0 +1,54 @@
+{
+  "es": {
+    "title": "Matmilen",
+    "intro": "Matmilen acababa de nacer en Suecia. Era un concepto nuevo: una caminata gastronómica para disfrutar con amigos y familia, probando distintos platos en varios restaurantes.",
+    "challenge": {
+      "title": "El desafío era enorme:",
+      "text": "Muy poca gente conocía la marca. El concepto de food walk casi no existía en el país. Y, para sumar emoción… ¡teníamos solo un mes para lograr que el evento fuera un éxito!"
+    },
+    "strategy": {
+      "title": "La estrategia",
+      "text": "Sabía que debía conectar con las emociones del público, así que investigué sus motivaciones, hablé con los restaurantes y diseñé un recorrido propio para mostrar la experiencia del evento."
+    },
+    "footer": {
+      "subtitle": "SUBTÍTULO",
+      "leftText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "rightText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "imageSection": {
+      "title": "TÍTULO GRANDE",
+      "image": "/foto_1.jpg"
+    },
+    "images": {
+      "row": ["/project_img2.jpg", "/project_img8.jpg"],
+      "stack": ["/project_img4.jpg", "/project_img3.jpg"],
+      "right": "/gif_1.gif"
+    }
+  },
+  "en-gb": {
+    "title": "Matmilen",
+    "intro": "Matmilen was just born in Sweden. It was a new concept: a food walk to enjoy with friends and family, tasting different dishes at several restaurants.",
+    "challenge": {
+      "title": "The challenge was huge:",
+      "text": "Very few people knew the brand. The concept of a food walk barely existed in the country. And to make it even more exciting... we only had one month to make the event a success!"
+    },
+    "strategy": {
+      "title": "The strategy",
+      "text": "I knew I had to connect with the audience’s emotions, so I researched their motivations, spoke with the restaurants, and designed my own tour to showcase the event experience."
+    },
+    "footer": {
+      "subtitle": "SUBTITLE",
+      "leftText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "rightText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "imageSection": {
+      "title": "BIG TITLE",
+      "image": "/foto_1.jpg"
+    },
+    "images": {
+      "row": ["/project_img2.jpg", "/project_img8.jpg"],
+      "stack": ["/project_img4.jpg", "/project_img3.jpg"],
+      "right": "/gif_1.gif"
+    }
+  }
+}

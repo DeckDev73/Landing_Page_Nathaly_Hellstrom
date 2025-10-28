@@ -1,0 +1,166 @@
+/* Contenedor general */
+.carouselWrapper {
+  
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 46px 0 40px 0;
+  
+  /* overflow: hidden; evita que se vean partes laterales fuera del contenedor */
+}
+
+/* ----- Swiper Base ----- */
+.mySwiper {
+  
+  width: 90%;
+  height: 500px;
+  --swiper-navigation-color: #c4a28a; /* color de flechas */
+  --swiper-navigation-size: 45px;     /* tamaño de flechas */
+  padding-left: 0 !important;         /* elimina padding lateral */
+  padding-right: 0 !important;
+}
+
+.mySwiper .swiper-wrapper {
+  
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Forzar 2 slides exactos por vista, compensando spaceBetween de 40px */
+.mySwiper .swiper-slide {
+  width: calc(50% - 20px) !important; /* 2 slides por vista (40px de gap -> 20px cada uno) */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* sin padding interno */
+}
+
+/* ----- Card / Slide Content ----- */
+.slideContent {
+  position: relative;
+  width: 100%;
+  height: 100%;          
+  border-radius: 20px;     /* bordes redondeados que pediste */
+  overflow: hidden;
+  cursor: pointer;
+  background: #000;        /* fallback mientras carga la imagen */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12); /* sombra suave para elevar la tarjeta */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.slideContent:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+}
+
+/* Imagen dentro del slide, respetando bordes redondeados */
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px; /* refuerza el redondeo */
+}
+
+/* ----- Texto sobre la imagen ----- */
+.slideText {
+  position: absolute;
+  bottom: 28px;
+  left: 18px;
+  right: 18px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  width: auto;
+  padding: 0;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.7); /* mayor legibilidad */
+  pointer-events: none; /* evita interferir con clicks en la tarjeta */
+}
+
+/* Título principal */
+.slideText h2 {
+  font-size: 22px;
+  margin: 0 0 6px 0;
+  line-height: 1;
+}
+
+/* Subtítulo (país, etc.) */
+.slideText h3 {
+  font-size: 13px;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+/* Descripción secundaria */
+.slideText p {
+  font-size: 12px;
+  margin-top: 8px;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+/* ----- Flechas (navegación) posición y click area ----- */
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+   all: unset;
+  color: var(--swiper-navigation-color);
+  width: var(--swiper-navigation-size);
+  height: var(--swiper-navigation-size);
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+  all: unset;
+  font-size: 36px;            /* antes 22px → más grande */
+  font-weight: 900;           /* más gruesas */
+  text-shadow: 0 0 6px rgba(0,0,0,0.3); /* da más presencia */
+}
+
+/* Aumentar el area clicable de las flechas sin cambiar la apariencia */
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  all: unset;
+  padding: 8px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 50%;
+}
+
+/* ----- Responsive: 1 slide en pantallas pequeñas ----- */
+@media (max-width: 768px) {
+  .mySwiper {
+    height: 420px;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 100% !important; /* 1 slide por vista en móvil */
+  }
+
+  .slideContent {
+    height: 380px;
+    border-radius: 16px;
+  }
+
+  .slideText {
+    left: 14px;
+    right: 14px;
+    bottom: 22px;
+  }
+
+  .slideText h2 {
+    font-size: 20px;
+  }
+}
+
+/* Ajustes finos cuando la pantalla es muy pequeña */
+@media (max-width: 420px) {
+  .mySwiper { height: 360px; }
+  .slideContent { height: 320px; }
+  .slideText h2 { font-size: 18px; }
+  .slideText h3, .slideText p { font-size: 12px; }
+}

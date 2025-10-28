@@ -1,0 +1,257 @@
+.timelineWrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #f5ebe3;
+  position: relative;
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+}
+.timelineLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #a37a5b;
+  z-index: 0; /* z-index bajo para que quede detrás del texto */
+}
+
+.timeline {
+  display: flex;
+  gap: 9rem;
+  padding: 0 2rem;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: none;
+  min-width: fit-content;
+}
+
+.card {
+  min-width: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Conectores: base (ocultos por defecto) */
+.connectorUp,
+.connectorDown {
+  position: absolute;
+  left: 16px;             /* alinéalo con el borde izquierdo del textContent; ajusta si es necesario */
+  width: 2px;
+  background-color: #a37a5b;
+  z-index: 1;
+  border-radius: 2px;
+  display: none;         /* se activa según even/odd */
+}
+
+/* El punto decorativo junto al texto (opcional) */
+.connectorUp::after,
+.connectorDown::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #a37a5b;
+  border-radius: 50%;
+}
+
+/* --- Para tarjetas pares: el texto está arriba (según tu css .even .textContent translateY(-180px)) 
+   Mostramos connectorUp: la línea va desde el centro (timeline) hacia arriba hasta el texto. */
+.even .connectorUp {
+  display: block;
+  /* Sitúa el extremo inferior en el centro horizontal: top empieza en 50% del card */
+  top: 50%;
+  /* la altura debe alcanzar hasta el texto (ajusta 150-200 según tu translateY); aquí probamos 160px */
+  height: 160px;
+  transform: translateY(-100%); /* la línea sube: top = 50% y se mueve hacia arriba por su altura */
+  z-index: 0;
+}
+
+/* colocamos el punto decorativo arriba (extremo superior de la línea) */
+.even .connectorUp::after {
+  top: -6px; /* ligeramente por encima del extremo superior */
+}
+
+/* --- Para tarjetas impares: el texto está abajo.
+   Mostramos connectorDown: la línea va desde el centro hacia abajo hasta el texto. */
+.odd .connectorDown {
+  display: block;
+  /* la línea comienza en el centro: top: 50% */
+  top: 50%;
+  /* altura hacia abajo; ajusta 120-160 según tu spacing */
+  height: 160px;
+  /* sin transform para que la línea crezca hacia abajo desde 50% */
+  z-index: 0;
+}
+
+/* colocamos el punto decorativo en el extremo inferior de la línea */
+.odd .connectorDown::after {
+  bottom: -6px;
+  top: auto;
+}
+
+
+/* Ajustes finos: alinear el left del conector con el borde del textContent */
+.textContent {
+  position: absolute;
+  top: 50%;
+  left: 40px; /* cambia según tu layout; el conector usa left:10px para quedar justo al borde */
+  transform: translateY(-50%);
+  width: 300px;
+  z-index: 3;
+}
+
+/* Si tus transforms para even/odd son distintos, ajusta los height de connectorUp/Down para casar con translateY */
+.even .textContent { transform: translateY(-180px); }
+.odd .textContent { transform: translateY(0); }
+
+
+
+
+
+
+
+
+.eyeBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #5a3d2b;
+  transition: transform 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #e0d2c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eyeBtn:hover {
+  transform: translateY(-50%) scale(1.1);
+  color: #a37a5b;
+  background-color: #e0d2c7;
+}
+.textContent {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 300px;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: visible;
+  z-index: 3;
+  padding: 10px; /* Añadimos padding para mejor legibilidad */
+}
+
+.even .textContent {
+  transform: translateY(-180px); /* Aumentado a -220px para textos largos */
+  margin-bottom: 80px; /* Más espacio debajo para textos largos */
+  z-index: 4;
+  /* Opcional: fondo para resaltar el texto largo */
+  /* background: rgba(245, 235, 227, 0.95); */
+  /* border-radius: 4px; */
+}
+
+.odd .textContent {
+  transform: translateY(0);
+  padding-top: 1rem;
+  padding-bottom: 80px; /* Ajustamos también para consistencia */
+  z-index: 3;
+}
+
+/* Ajuste para la línea de tiempo */
+.timelineLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #a37a5b;
+  z-index: 0;
+}
+.year {
+  font-family: var(--AnticDidone);
+  font-size: 14px;
+  display: block;
+  -webkit-text-stroke: 1px #5a3d2b;
+
+}
+
+.title {
+  font-family: var(--AnticDidone);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  -webkit-text-stroke: 1px #5a3d2b;
+}
+
+.text {
+  font-size: 14px;
+  color: #444;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(20px);
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.even .imageContainer {
+  transform: translateY(40px);
+}
+
+.odd .imageContainer {
+  transform: translateY(-200px);
+}
+
+.imageContainer::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  border-style: solid;
+  z-index: 2;
+}
+
+.even .imageContainer::before {
+  top: -5%;
+  border-width: 10px 10px 0 0;
+  border-color: #444 transparent transparent transparent;
+}
+
+.odd .imageContainer::before {
+  bottom: -5%;
+  border-width: 0 10px 10px 0;
+  border-color: transparent transparent #444 transparent;
+}
+
+.timelineImage {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}

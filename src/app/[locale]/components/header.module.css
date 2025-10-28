@@ -1,0 +1,152 @@
+/* --- Header base --- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* --- Nombre / Logo --- */
+.name {
+  font-family: var(--Gabriola);
+  font-size: 3.7rem;
+  font-weight: 300;
+  color: #a26a4f;
+  transform: scaleY(1.2);
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+/* --- Menú principal --- */
+.navMenu ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: #a26a4f;
+  font-size: 22px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: #5a3d2b;
+}
+
+/* --- Selector de idioma --- */
+.desktopLang {
+  display: block;
+}
+
+.mobileLang {
+  display: none;
+}
+
+/* --- Botón hamburguesa --- */
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #5a3d2b;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* --- Animación del botón --- */
+.bar1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar2 {
+  opacity: 0;
+}
+
+.bar3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* --- Responsive: menú hamburguesa --- */
+@media (max-width: 1100px) {
+  .menuToggle {
+    display: flex;
+  }
+
+  .navMenu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    background-color: #fcf5ef;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navMenu.showMenu {
+    transform: translateX(0);
+  }
+
+  .navMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px 0;
+    margin: 0;
+    gap: 0; 
+  }
+
+  .navMenu ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #c4a28a;
+    padding: 15px 0;
+    box-sizing: border-box;
+  }
+
+  .navMenu ul li:last-child {
+    border-bottom: none;
+  }
+
+  .navMenu a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    color: #a26a4f;
+  }
+
+  .desktopLang {
+    display: none;
+  }
+
+  .mobileLang {
+    display: block;
+    margin-top: 10px;
+  }
+}

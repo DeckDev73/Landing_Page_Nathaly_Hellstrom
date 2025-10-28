@@ -1,0 +1,288 @@
+/* ==============================
+   ESTILOS BASE (Desktop)
+============================== */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.containerLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fcf5ef;
+  padding: 2em;
+  padding-inline: 6%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.containerRight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.fotoImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 10px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  display: block;
+}
+
+.fotoImg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 0 10px;
+  background: radial-gradient(
+    circle at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  pointer-events: none;
+}
+
+
+/* Tipografías y textos */
+.h1 {
+  font-family: var(--AnticDidone);
+  font-size: 3.7rem;
+  font-weight: 300;
+  color: #a26a4f;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #a26a4f;
+  margin: 0;
+  border-bottom: 2px solid #c4a28a;
+}
+
+.hi {
+  font-family: var(--ArchivoBlack);
+  font-size: 5rem;
+  font-weight: 700;
+  color: #6e3d2e;
+  margin: 0;
+}
+
+.im {
+  font-family: var(--ArchivoBlack);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #a26a4f;
+  margin: 0;
+}
+
+.parrafo {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.code {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: #f0f0f0;
+  color: #763f22;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.code strong {
+  font-weight: bold;
+}
+
+/* Scroll personalizado */
+.scrollFade {
+  max-height: 700px;
+  overflow-y: auto;
+  position: relative;
+  mask-image: linear-gradient(to bottom, transparent 5%, black 15%, black calc(100% - 20%), transparent 90%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 15%, black calc(100% - 20%), transparent 90%);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  box-sizing: border-box;
+}
+
+.scrollFade::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollFade::-webkit-scrollbar-thumb {
+  background-color: #a26a4f;
+  border-radius: 4px;
+}
+
+.scrollFade::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+/* Sección proyectos */
+.proyectosSection {
+  background-color: #fcf5ef;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.proyectosTitulo {
+  font-family: var(--AnticDidone);
+  margin-top: 80px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #a26a4f;
+  position: relative;
+  display: inline-block;
+}
+
+.proyectosTitulo::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: #c19a6b;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+/* 📱 Smartphones (menos de 600px) */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .containerLeft, .containerRight {
+    width: 100%;
+    height: auto;
+  }
+
+  .containerLeft {
+    padding: 1.5em;
+  }
+
+  .fotoImg {
+    height: 250px;
+    border-radius: 0px;
+    object-position: center 8%;
+  }
+
+  .hi {
+    font-size: 2.8rem;
+  }
+
+  .im {
+    font-size: 1.6rem;
+  }
+
+  .h1 {
+    font-size: 2.5rem;
+  }
+
+  .h2 {
+    font-size: 1.8rem;
+  }
+
+  .parrafo {
+    font-size: 16px;
+  }
+
+  .proyectosTitulo {
+    font-size: 2.2rem;
+    margin-top: 40px;
+  }
+}
+
+/* 📱 Tablets (601px a 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .container {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .containerLeft, .containerRight {
+    width: 100%;
+    height: auto;
+  }
+
+  .fotoImg {
+    height: 400px;
+    border-radius: 0px;
+    object-position: center 20%;
+  }
+
+  .h1 {
+    font-size: 3rem;
+  }
+
+  .hi {
+    font-size: 3.8rem;
+  }
+
+  .im {
+    font-size: 2rem;
+  }
+
+  .h2 {
+    font-size: 2rem;
+  }
+
+  .parrafo {
+    font-size: 18px;
+  }
+
+  .proyectosTitulo {
+    font-size: 3rem;
+    margin-top: 60px;
+  }
+}
+
+/* 💻 Laptops pequeñas (993px a 1280px) */
+@media (min-width: 993px) and (max-width: 1280px) {
+  .containerLeft {
+    padding-inline: 4%;
+  }
+
+  .h1 {
+    font-size: 3.3rem;
+  }
+
+  .hi {
+    font-size: 4.2rem;
+  }
+
+  .im {
+    font-size: 2.3rem;
+  }
+
+  .parrafo {
+    font-size: 20px;
+  }
+}

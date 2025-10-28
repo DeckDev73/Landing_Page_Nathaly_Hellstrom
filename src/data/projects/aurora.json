@@ -1,0 +1,54 @@
+{
+  "es": {
+    "title": "Aurora",
+    "intro": "Aurora nació como una experiencia inmersiva donde la luz, la música y la gastronomía se unieron para crear un recorrido sensorial único en el corazón de Estocolmo.",
+    "challenge": {
+      "title": "El desafío:",
+      "text": "El objetivo era transformar un espacio urbano común en una experiencia visual y emocional que conectara con el público. Teníamos poco tiempo y un clima impredecible, lo que nos obligó a innovar en cada detalle."
+    },
+    "strategy": {
+      "title": "La estrategia",
+      "text": "Nos enfocamos en la conexión emocional a través de la iluminación y el sonido. Cada restaurante participante representó una 'etapa de la aurora', creando una narrativa visual que invitaba al público a descubrir, degustar y compartir."
+    },
+    "footer": {
+      "subtitle": "RESULTADOS",
+      "leftText": "Aurora superó las expectativas: los tickets se agotaron en solo tres días, y la experiencia fue destacada por medios nacionales como un nuevo referente cultural.",
+      "rightText": "El evento reforzó la identidad de marca y demostró el poder de la creatividad colaborativa en espacios urbanos."
+    },
+    "imageSection": {
+      "title": "LUZ Y EXPERIENCIA",
+      "image": "/foto_1.jpg"
+    },
+    "images": {
+      "row": ["/project_img2.jpg", "/project_img8.jpg"],
+      "stack": ["/project_img4.jpg", "/project_img3.jpg"],
+      "right": "/project_img5.jpg"
+    }
+  },
+  "en-gb": {
+    "title": "Aurora",
+    "intro": "Aurora was born as an immersive experience where light, music, and gastronomy came together to create a unique sensory journey in the heart of Stockholm.",
+    "challenge": {
+      "title": "The challenge:",
+      "text": "The goal was to transform an ordinary urban space into a visual and emotional experience that connected with people. We had little time and unpredictable weather, which forced us to innovate at every step."
+    },
+    "strategy": {
+      "title": "The strategy",
+      "text": "We focused on emotional connection through lighting and sound. Each participating restaurant represented a 'stage of the aurora', building a visual story that encouraged visitors to explore, taste, and share."
+    },
+    "footer": {
+      "subtitle": "RESULTS",
+      "leftText": "Aurora exceeded expectations: tickets sold out in just three days, and the experience was featured in national media as a new cultural benchmark.",
+      "rightText": "The event strengthened the brand identity and demonstrated the power of collaborative creativity in urban environments."
+    },
+    "imageSection": {
+      "title": "LIGHT & EXPERIENCE",
+      "image": "/foto_1.jpg"
+    },
+    "images": {
+      "row": ["/project_img2.jpg", "/project_img8.jpg"],
+      "stack": ["/project_img4.jpg", "/project_img3.jpg"],
+      "right": "/project_img5.jpg"
+    }
+  }
+}
