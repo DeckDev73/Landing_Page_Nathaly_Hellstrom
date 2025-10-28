@@ -1,8 +1,10 @@
-import createNextIntlPlugin from 'next-intl/plugin';
+const createNextIntlPlugin = require('next-intl/plugin');
 
 const withNextIntl = createNextIntlPlugin();
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'standalone', // necesario para Netlify
+};
 
-export default withNextIntl(nextConfig);
+module.exports = withNextIntl(nextConfig);
+
