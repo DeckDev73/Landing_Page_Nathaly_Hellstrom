@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Header from "@/app/[locale]/components/header";
-import TimelineClient from "./timelineClient";
+import TimelineClient from "./timelineClient.jsx";
 
 
 // ✅ Genera metadata dinámica desde los mensajes (i18n)
