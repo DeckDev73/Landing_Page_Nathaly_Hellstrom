@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import logo from "@/../public/logo_1.svg";
 import { useTranslations } from "next-intl";
@@ -39,7 +39,6 @@ export default function HeaderHome() {
       {/* 🔹 Menú principal */}
       <nav className={`${styles.navMenu} ${menuOpen ? styles.showMenu : ""}`}>
         <ul>
-          <li><Link href="/">{t("home")}</Link></li>
           <li><Link href="/project/matmilen">{t("project")}</Link></li>
           <li><Link href="/about">{t("about")}</Link></li>
           <li><Link href="/contact">{t("contact")}</Link></li>

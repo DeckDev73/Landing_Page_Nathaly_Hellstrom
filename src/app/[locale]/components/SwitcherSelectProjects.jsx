@@ -2,7 +2,7 @@
 
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
-import styles from "@/app/[locale]/project/project.module.css"; // usa los mismos estilos que tu header
+import styles from "@/app/[locale]/project/project.module.css";
 
 export default function LanguageButtons() {
   const router = useRouter();
@@ -10,10 +10,17 @@ export default function LanguageButtons() {
   const currentLocale = useLocale();
 
   const switchLocale = (newLocale) => {
+    // Guardar cookie por 1 año; Secure solo en producción
+    const secureFlag = process.env.NODE_ENV === "production" ? "Secure; " : "";
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; ${secureFlag}SameSite=Lax`;
+
+    // Cambia idioma en la URL (manteniendo el resto de la ruta)
     const segments = pathname.split("/");
-    segments[1] = newLocale; // cambia el idioma en la URL
+    segments[1] = newLocale;
     const newPath = segments.join("/");
-    router.push(newPath);
+
+    // replace evita acumular mucho historial
+    router.replace(newPath);
   };
 
   return (

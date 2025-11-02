@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import Link from "next/link"; // 👈 Importación añadida
+import { Link } from "@/i18n/routing";
 import LanguageButtons from "@/app/[locale]/components/SwitcherSelectProjects";
 import styles from "../project.module.css";
 
