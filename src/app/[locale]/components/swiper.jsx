@@ -48,7 +48,7 @@ export default function Carousel() {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={false}
-        slidesPerView={2}
+        slidesPerView={3}
         slidesPerGroup={1}  
         spaceBetween={50}    
         loop={true}

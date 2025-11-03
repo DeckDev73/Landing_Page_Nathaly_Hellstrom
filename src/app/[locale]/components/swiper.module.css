@@ -2,7 +2,7 @@
 .carouselWrapper {
   
   width: 100%;
-  max-width: 900px;
+  max-width: 1500px;
   margin: auto;
   padding: 46px 0 40px 0;
   
@@ -26,9 +26,8 @@
   margin-right: 0 !important;
 }
 
-/* Forzar 2 slides exactos por vista, compensando spaceBetween de 40px */
 .mySwiper .swiper-slide {
-  width: calc(50% - 20px) !important; /* 2 slides por vista (40px de gap -> 20px cada uno) */
+  width: calc(50% - 20px) !important; 
   box-sizing: border-box;
   display: flex;
   justify-content: center;

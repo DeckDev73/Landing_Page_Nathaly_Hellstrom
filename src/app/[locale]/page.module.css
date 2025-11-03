@@ -100,6 +100,23 @@
   line-height: 1.5;
 }
 
+.verMasBtn {
+  float: right;
+  background: none;
+  border: none;
+  color: #a26a4f;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0px;
+  transition: color 0.3s ease;
+}
+
+.verMasBtn:hover {
+  color: #6e3d2e;
+}
+
+
 .code {
   font-family: inherit;
   font-size: inherit;
@@ -116,13 +133,13 @@
 
 /* Scroll personalizado */
 .scrollFade {
-  max-height: 700px;
+  max-height: 380px;
   overflow-y: auto;
   position: relative;
   mask-image: linear-gradient(to bottom, transparent 5%, black 15%, black calc(100% - 20%), transparent 90%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 15%, black calc(100% - 20%), transparent 90%);
   padding-top: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
   box-sizing: border-box;
 }
 
