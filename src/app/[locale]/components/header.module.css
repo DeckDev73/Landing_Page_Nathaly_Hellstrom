@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 1px 40px;
   position: absolute;
   top: 0px;
   left: 0;
@@ -17,13 +17,36 @@
 /* --- Nombre / Logo --- */
 .name {
   font-family: var(--Gabriola);
-  font-size: 3.7rem;
+  font-size: 3.1rem;
   font-weight: 300;
   color: #a26a4f;
   transform: scaleY(1.2);
   letter-spacing: 0.5px;
   text-decoration: none;
 }
+
+/* --- Logo --- */
+.logoContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%); /* ✅ centra perfectamente el logo en ambas direcciones */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.logoImg {
+  background-color: #fcf5ef;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
 
 /* --- Menú principal --- */
 .navMenu ul {
