@@ -17,7 +17,7 @@
   align-items: flex-start;
   background-color: #fcf5ef;
   padding: 2em;
-  padding-inline: 6%;
+  padding-inline: 5%;
   height: 100%;
   box-sizing: border-box;
   overflow-y: auto;
@@ -62,7 +62,7 @@
 /* Tipografías y textos */
 .h1 {
   font-family: var(--AnticDidone);
-  font-size: 3.7rem;
+  font-size: 3.4rem;
   font-weight: 300;
   color: #a26a4f;
   display: inline-block;
@@ -72,7 +72,7 @@
 }
 
 .h2 {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   font-weight: 600;
   color: #a26a4f;
   margin: 0;
@@ -81,7 +81,7 @@
 
 .hi {
   font-family: var(--ArchivoBlack);
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #6e3d2e;
   margin: 0;
@@ -89,7 +89,7 @@
 
 .im {
   font-family: var(--ArchivoBlack);
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   font-weight: 600;
   color: #a26a4f;
   margin: 0;
@@ -98,6 +98,7 @@
 .parrafo {
   font-size: 22px;
   line-height: 1.5;
+  
 }
 
 .verMasBtn {
@@ -117,6 +118,29 @@
 }
 
 
+.social {
+  display: flex;
+  justify-content: center; /* 🔹 centra horizontalmente todos los íconos */
+  align-items: center;      /* 🔹 los alinea verticalmente en la misma línea */
+  gap: 75px;                /* 🔹 espacio entre cada ícono */
+  margin-top: 2em;
+  padding: 0;
+  align-self: center;       /* 🔹 centra el bloque dentro del contenedor padre (.containerLeft) */
+}
+
+.social a img {
+  width: 90px;  /* 🔹 tamaño de los íconos (ajústalo aquí) */
+  height: 90px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+
+
+
 .code {
   font-family: inherit;
   font-size: inherit;
@@ -133,15 +157,19 @@
 
 /* Scroll personalizado */
 .scrollFade {
-  max-height: 380px;
+  max-height: 295px; /* ajusta según cuánto texto quieras mostrar antes del “Ver más” */
   overflow-y: auto;
   position: relative;
-  mask-image: linear-gradient(to bottom, transparent 5%, black 15%, black calc(100% - 20%), transparent 90%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 15%, black calc(100% - 20%), transparent 90%);
-  padding-top: 10%;
-  padding-bottom: 7%;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  padding-top: 0px; /* elimina el espacio extra superior */
+  padding-bottom: 0; /* elimina el espacio extra inferior */
+  margin-top: 20px;
+  margin-bottom: 20px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
 
 .scrollFade::-webkit-scrollbar {
   width: 8px;

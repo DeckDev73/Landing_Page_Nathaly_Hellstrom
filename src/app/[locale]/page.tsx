@@ -8,6 +8,10 @@ import Carousel from "@/app/[locale]/components/swiper";
 import Footer from "@/app/[locale]/components/footer";
 import DescriptionHome from "@/app/[locale]/components/descriptionHome";
 
+import insta from '@/../public/Icons-14.png';
+import linkedin from '@/../public/Icons-22.png';
+import gmail from '@/../public/Icons-21.png';
+
 export async function generateMetadata() {
   const t = await getTranslations();
   const seo = t.raw("HomePage.seo");
@@ -63,7 +67,42 @@ export default async function Home() {
 
             {/* 👇 Componente cliente controlando el texto */}
             <DescriptionHome shortText={shortText} fullText={fullText} />
+          
+            {/* Redes sociales */}
+            <div className={styles.social}>
+              
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Image src={linkedin} alt="LinkedIn" />
+              </a>
+
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Image src={insta} alt="Instagram"  />
+              </a>
+
+              <a
+                href="mailto:correo@ejemplo.com"
+                aria-label="Correo electrónico"
+              >
+                <Image src={gmail} alt="Correo"  />
+              </a>
+
+
+
+            </div>
+          
           </div>
+
+          
 
           <div className={styles.containerRight}>
             <Image
