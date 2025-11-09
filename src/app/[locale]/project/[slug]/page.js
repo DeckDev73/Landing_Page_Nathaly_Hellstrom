@@ -51,7 +51,11 @@ export default async function ProjectPage({ params }) {
     <div className={styles.fullScreen}>
       <div className={styles.container}>
         <main className={styles.main}>
-          {/* Menú de navegación */}
+
+          {/* Header */}
+          <section className={styles.headerSection}>
+            <div className={styles.headerTitle}>{title}</div>
+              {/* Menú de navegación */}
           <nav className={styles.nav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
@@ -74,11 +78,7 @@ export default async function ProjectPage({ params }) {
               <LanguageButtons />
             </div>
           </nav>
-
-          {/* Header */}
-          <section className={styles.headerSection}>
-            <div className={styles.headerTitle}>{title}</div>
-            <div className={styles.headerText}>{intro}</div>
+            {/* <div className={styles.headerText}>{intro}</div> */}
           </section>
 
           {/* Contenido principal */}
@@ -122,7 +122,7 @@ export default async function ProjectPage({ params }) {
               <div className={styles.footerTitle}>{footer.subtitle}</div>
               <div className={styles.footerDescription}>{footer.leftText}</div>
             </div>
-            <div className={styles.footerRight}>{footer.rightText}</div>
+           
           </section>
 
           {/* Imagen final */}

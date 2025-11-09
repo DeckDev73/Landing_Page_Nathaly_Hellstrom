@@ -1,22 +1,22 @@
 {
   "es": {
-    "title": "Matmilen",
+    "title": "Caso de Éxito - Matmilen",
     "intro": "Matmilen acababa de nacer en Suecia. Era un concepto nuevo: una caminata gastronómica para disfrutar con amigos y familia, probando distintos platos en varios restaurantes.",
     "challenge": {
-      "title": "El desafío era enorme:",
+      "title": "EL DESAFIO ERA ENORME",
       "text": "Muy poca gente conocía la marca. El concepto de food walk casi no existía en el país. Y, para sumar emoción… ¡teníamos solo un mes para lograr que el evento fuera un éxito!"
     },
     "strategy": {
-      "title": "La estrategia",
-      "text": "Sabía que debía conectar con las emociones del público, así que investigué sus motivaciones, hablé con los restaurantes y diseñé un recorrido propio para mostrar la experiencia del evento."
+      "title": "LA ESTRATEGIA",
+      "text": "Debía conectar con las emociones del público, así que investigué sus motivaciones, hablé con restaurantes y diseñé un recorrido propio para mostrar la experiencia del evento."
     },
     "footer": {
-      "subtitle": "SUBTÍTULO",
-      "leftText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "rightText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "subtitle": "ACCIÓN E IMPACTO",
+      "leftText": "Transformé la estrategia en una historia viva: reels que mostraban la energía del recorrido, fotos que transmitían el disfrute y una campaña que amplificó el mensaje. En pocas semanas, Matmilen pasó de un inicio tímido a un evento completamente agotado, alcanzando a cientos de miles de personas y generando la conexión que buscábamos. El crecimiento fue tan claro como sostenido: de 2 millones de coronas suecas en ingresos anuales en 2022, la empresa superó los 8 millones en 2025, consolidándose como una de las experiencias gastronómicas más reconocidas de Suecia."
+  
     },
     "imageSection": {
-      "title": "TÍTULO GRANDE",
+      "title": "SF ALWAYS FOR YOU",
       "image": "/foto_1.jpg"
     },
     "images": {
@@ -37,12 +37,12 @@
       "text": "I knew I had to connect with the audience’s emotions, so I researched their motivations, spoke with the restaurants, and designed my own tour to showcase the event experience."
     },
     "footer": {
-      "subtitle": "SUBTITLE",
-      "leftText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "rightText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "subtitle": "LA ACCIÓN Y EL IMPACTO",
+      "leftText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+     
     },
     "imageSection": {
-      "title": "BIG TITLE",
+      "title": "SF ALWAYS FOR YOU",
       "image": "/foto_1.jpg"
     },
     "images": {
