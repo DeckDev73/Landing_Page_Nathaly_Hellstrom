@@ -1,3 +1,4 @@
+/* ========== ESTILOS BASE (Desktop) ========== */
 .timelineWrapper {
   width: 100vw;
   height: 100vh;
@@ -9,6 +10,7 @@
   align-items: center;
   padding-left: 2rem;
 }
+
 .timelineLine {
   position: absolute;
   top: 50%;
@@ -16,7 +18,7 @@
   right: 0;
   height: 2px;
   background: #a37a5b;
-  z-index: 0; /* z-index bajo para que quede detrás del texto */
+  z-index: 0;
 }
 
 .timeline {
@@ -38,19 +40,18 @@
   align-items: center;
 }
 
-/* Conectores: base (ocultos por defecto) */
+/* ========== CONECTORES DESKTOP ========== */
 .connectorUp,
 .connectorDown {
   position: absolute;
-  left: 16px;             /* alinéalo con el borde izquierdo del textContent; ajusta si es necesario */
+  left: 16px;
   width: 2px;
   background-color: #a37a5b;
   z-index: 1;
   border-radius: 2px;
-  display: none;         /* se activa según even/odd */
+  display: none;
 }
 
-/* El punto decorativo junto al texto (opcional) */
 .connectorUp::after,
 .connectorDown::after {
   content: "";
@@ -63,63 +64,33 @@
   border-radius: 50%;
 }
 
-/* --- Para tarjetas pares: el texto está arriba (según tu css .even .textContent translateY(-180px)) 
-   Mostramos connectorUp: la línea va desde el centro (timeline) hacia arriba hasta el texto. */
+/* Tarjetas pares (arriba) */
 .even .connectorUp {
   display: block;
-  /* Sitúa el extremo inferior en el centro horizontal: top empieza en 50% del card */
   top: 50%;
-  /* la altura debe alcanzar hasta el texto (ajusta 150-200 según tu translateY); aquí probamos 160px */
   height: 160px;
-  transform: translateY(-100%); /* la línea sube: top = 50% y se mueve hacia arriba por su altura */
+  transform: translateY(-100%);
   z-index: 0;
 }
 
-/* colocamos el punto decorativo arriba (extremo superior de la línea) */
 .even .connectorUp::after {
-  top: -6px; /* ligeramente por encima del extremo superior */
+  top: -6px;
 }
 
-/* --- Para tarjetas impares: el texto está abajo.
-   Mostramos connectorDown: la línea va desde el centro hacia abajo hasta el texto. */
+/* Tarjetas impares (abajo) */
 .odd .connectorDown {
   display: block;
-  /* la línea comienza en el centro: top: 50% */
   top: 50%;
-  /* altura hacia abajo; ajusta 120-160 según tu spacing */
   height: 160px;
-  /* sin transform para que la línea crezca hacia abajo desde 50% */
   z-index: 0;
 }
 
-/* colocamos el punto decorativo en el extremo inferior de la línea */
 .odd .connectorDown::after {
   bottom: -6px;
   top: auto;
 }
 
-
-/* Ajustes finos: alinear el left del conector con el borde del textContent */
-.textContent {
-  position: absolute;
-  top: 50%;
-  left: 40px; /* cambia según tu layout; el conector usa left:10px para quedar justo al borde */
-  transform: translateY(-50%);
-  width: 300px;
-  z-index: 3;
-}
-
-/* Si tus transforms para even/odd son distintos, ajusta los height de connectorUp/Down para casar con translateY */
-.even .textContent { transform: translateY(-180px); }
-.odd .textContent { transform: translateY(0); }
-
-
-
-
-
-
-
-
+/* ========== CONTENIDO DESKTOP ========== */
 .eyeBtn {
   background: transparent;
   border: none;
@@ -145,10 +116,11 @@
   color: #a37a5b;
   background-color: #e0d2c7;
 }
+
 .textContent {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 40px;
   transform: translateY(-50%);
   width: 300px;
   text-align: left;
@@ -156,41 +128,27 @@
   white-space: normal;
   overflow: visible;
   z-index: 3;
-  padding: 10px; /* Añadimos padding para mejor legibilidad */
+  padding: 10px;
 }
 
 .even .textContent {
-  transform: translateY(-180px); /* Aumentado a -220px para textos largos */
-  margin-bottom: 80px; /* Más espacio debajo para textos largos */
+  transform: translateY(-180px);
+  margin-bottom: 80px;
   z-index: 4;
-  /* Opcional: fondo para resaltar el texto largo */
-  /* background: rgba(245, 235, 227, 0.95); */
-  /* border-radius: 4px; */
 }
 
 .odd .textContent {
   transform: translateY(0);
   padding-top: 1rem;
-  padding-bottom: 80px; /* Ajustamos también para consistencia */
+  padding-bottom: 80px;
   z-index: 3;
 }
 
-/* Ajuste para la línea de tiempo */
-.timelineLine {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: #a37a5b;
-  z-index: 0;
-}
 .year {
   font-family: var(--AnticDidone);
   font-size: 14px;
   display: block;
   -webkit-text-stroke: 1px #5a3d2b;
-
 }
 
 .title {
@@ -254,4 +212,267 @@
   object-fit: cover;
   width: 150px;
   height: 150px;
+}
+
+/* ========== ESTILOS MOBILE/TABLET (Vertical) ========== */
+@media (max-width: 1024px) {
+  .timelineWrapper {
+    height: auto;
+    margin-top: 100px;
+    min-height: 100vh;
+    overflow-x: visible;
+    overflow-y: auto;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  /* Línea vertical en móvil - más a la derecha */
+  .timelineLine {
+    top: -50px;
+    bottom: 0;
+    left: 100px; /* Posición fija para la línea vertical */
+    right: auto;
+    width: 2px;
+    height: calc(99% + 50px);
+    transform: none;
+    background: #a37a5b;
+  }
+
+  .timeline {
+    flex-direction: column;
+    gap: 4rem;
+    /* IMPORTANTE: Padding izquierdo igual a posición de línea + espacio mínimo */
+    padding: 2rem 1rem 2rem 120px; /* 100px (línea) + 20px (espacio mínimo) */
+    width: 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .card {
+    min-width: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding-left: 0;
+  }
+
+  /* Ocultar conectores verticales de desktop */
+  .connectorUp,
+  .connectorDown {
+    display: none !important;
+  }
+
+  /* ========== CONTENEDOR PARA BOTÓN Y CONECTORES ========== */
+  /* Este contenedor debe estar POSICIONADO ABSOLUTAMENTE en la línea vertical */
+  .connectorContainer {
+    position: absolute;
+    left: 0; /* Posicionado dentro del .card */
+    top: 0; /* Se ajustará dinámicamente */
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    transform: translateX(-36px); /* Mueve el contenedor a la posición de la línea */
+    height: 34px; /* Altura del botón */
+  }
+
+  /* Botón posicionado sobre la línea vertical */
+  .eyeBtn {
+    position: relative;
+    transform: none !important;
+    top: auto;
+    left: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #e0d2c7;
+    border: none;
+    cursor: pointer;
+    color: #5a3d2b;
+    transition: all 0.2s ease;
+    z-index: 3;
+  }
+
+  .eyeBtn:hover {
+    transform: scale(1.1) !important;
+    color: #a37a5b;
+    background-color: #e0d2c7;
+  }
+
+  /* Línea horizontal que sale del botón hacia la derecha */
+  .horizontalConnector {
+    position: absolute;
+    left: 34px; /* Comienza justo después del botón */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: #a37a5b;
+    z-index: 2;
+    width: 300px; /* Línea más larga */
+  }
+
+  /* Círculo decorativo al final de la línea */
+  .horizontalConnector::after {
+    content: '';
+    position: absolute;
+    right: -5px; /* Posición al final de la línea */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #a37a5b;
+    border-radius: 50%;
+    z-index: 3;
+  }
+
+  /* ========== CONTENIDO ========== */
+  /* Contenido principal (texto) con MARGEN MÍNIMO a la izquierda */
+  .textContent {
+    position: static;
+    width: calc(100% - 20px); /* Deja espacio mínimo a la izquierda */
+    max-width: 600px; /* Más ancho para centrar mejor */
+    margin: 0 0 1rem 20px; /* Margen izquierdo fijo de 20px desde la línea */
+    transform: none !important;
+    padding: 1rem 0 0 0;
+    z-index: 3;
+    order: 1;
+    /* Centrado pero con margen mínimo */
+    margin-left: 20px;
+    margin-right: auto;
+  }
+
+  .even .textContent,
+  .odd .textContent {
+    padding: 1rem 0 0 0;
+    margin: 0 0 1rem 20px;
+    transform: none !important;
+  }
+
+  /* Imagen debajo del texto en móvil con mismo margen */
+  .imageContainer {
+    position: static;
+    transform: none !important;
+    margin: 0 0 1rem 20px; /* Mismo margen izquierdo fijo */
+    display: block;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: fit-content;
+    order: 2;
+  }
+
+  /* Ocultar triángulos en móvil */
+  .imageContainer::before {
+    display: none;
+  }
+
+  /* Ajustar imagen para móvil */
+  .timelineImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Asegurar que el año y título tengan buen tamaño en móvil */
+  .year {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Ajustes específicos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .timelineWrapper {
+    margin-top: 90px;
+  }
+
+  .textContent {
+    max-width: 700px; /* Más ancho en tablet */
+  }
+  
+  .timelineImage {
+    width: 250px;
+    height: 250px;
+  }
+  
+  /* Línea más larga para tablets */
+  .horizontalConnector {
+    width: 400px; 
+  }
+}
+
+/* Ajustes para móviles pequeños */
+@media (max-width: 480px) {
+  .timelineWrapper {
+    margin-top: 80px;
+  }
+
+  /* Ajustar posición de la línea para móvil pequeño */
+  .timelineLine {
+    left: 80px; /* Más cerca en móvil pequeño */
+  }
+
+  .timeline {
+    padding-left: 100px; /* Ajustado: 80px (línea) + 20px (espacio) */
+    padding-right: 1rem;
+  }
+  
+  /* Ajustar transformación del contenedor del botón */
+  .connectorContainer {
+    transform: translateX(-36px); /* Mismo valor que left de timelineLine */
+  }
+  
+  .horizontalConnector {
+    width: 200px /* Línea más corta en móvil pequeño */
+  }
+  
+  .textContent {
+    max-width: 100%; /* Ocupa todo el ancho en móvil pequeño */
+    padding: 0 0.5rem; /* Pequeño padding lateral */
+    width: calc(100% - 20px); /* Mantener margen mínimo */
+  }
+  
+  .timelineImage {
+    width: 180px;
+    height: 180px;
+  }
+
+  .eyeBtn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 360px) {
+  .timelineLine {
+    left: 70px; /* Aún más cerca en pantallas muy pequeñas */
+  }
+
+  .timeline {
+    padding-left: 90px; /* 70px + 20px */
+  }
+  
+  .connectorContainer {
+    transform: translateX(-35px);
+  }
 }

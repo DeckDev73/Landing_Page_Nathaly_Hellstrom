@@ -112,6 +112,13 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+@media (max-width: 1300px) {
+  .logoContainer{
+    display: none;
+  }
+}
+
+
 /* --- Responsive: menú hamburguesa --- */
 @media (max-width: 1100px) {
   .menuToggle {
