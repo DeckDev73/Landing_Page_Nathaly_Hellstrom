@@ -90,6 +90,10 @@
     }
   },
 
+  "Footer": {
+    "rights": "© 2025 Nathaly Hellstrom — Todos los derechos reservados."
+  },
+
   "ContactPage": {
     "seo": {
       "title": "Contacto - Nathaly Hellström",
@@ -292,7 +296,7 @@
       {
         "year": "Estocolmo, Suecia | 2022 – Actualidad",
         "title": "GUGO & Vad händer i Sverige – Estratega en Psicología del Consumidor",
-        "text": "Lideró campañas de UX, storytelling y marketing impulsadas por la psicología del consumidor, generando millones en ventas para los clientes. Experta en estrategia de contenidos y optimización de experiencias de marca.",
+        "text": "Lideró campañas de UX, storytelling y marketing impulsadas por la psicología del consumidor, generando millones en ventas para los clientes.",
         "image": "/foto_1.jpg"
       }
     ]

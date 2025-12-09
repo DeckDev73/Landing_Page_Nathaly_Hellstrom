@@ -2,6 +2,7 @@
 import { getTranslations } from "next-intl/server";
 import Script from "next/script";
 import FormContact from "./formContact";
+import Footer from "@/app/[locale]/components/footer";
 
 // ✅ Genera metadata dinámica desde los mensajes (i18n)
 export async function generateMetadata() {
@@ -49,6 +50,7 @@ export default async function ContactPage() {
       {/* ✅ Contenido principal */}
       <main>
         <FormContact />
+        <Footer />
       </main>
     </div>
   );

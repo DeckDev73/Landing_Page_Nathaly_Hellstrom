@@ -3,8 +3,9 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Script from "next/script";
-import { Eye, EyeOff } from "lucide-react";
+import { EyeOff } from "lucide-react";
 import styles from "./line_time.module.css";
+import customEyeIcon from "@/../public/logo_1.svg";
 
 export default function TimelineClient({ timeline, seo }) {
   const [showImages, setShowImages] = useState(timeline.map(() => true));
@@ -146,10 +147,18 @@ export default function TimelineClient({ timeline, seo }) {
                     `Ocultar imagen para ${item.title}` : 
                     `Mostrar imagen para ${item.title}`}
                 >
-                  {showImages[index] && item.image ? (
-                    <EyeOff size={16} />
+                  {showImages[index] ? (
+                    // Cuando la imagen está VISIBLE: muestra tu imagen personalizada
+                    <Image
+                      src={customEyeIcon}
+                      alt={`Ocultar imagen para ${item.title}`}
+                      width={18}  // Ajusta según el tamaño de tu imagen
+                      height={18} // Ajusta según el tamaño de tu imagen
+                      className={styles.customEyeIcon}
+                    />
                   ) : (
-                    <Eye size={16} />
+                    // Cuando la imagen está OCULTA: muestra el ojo cerrado
+                    <EyeOff size={16} />
                   )}
                 </button>
                 <div className={styles.horizontalConnector} aria-hidden="true"></div>

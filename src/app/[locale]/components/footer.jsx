@@ -2,19 +2,26 @@
 import React from "react";
 import styles from "./footer.module.css";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 // Importar imágenes desde public
-import logo from '@/../public/logo_nombre_1.png';
+import logo from '@/../public/logo_2.svg';
 import insta from '@/../public/Icons-14.png';
 import linkedin from '@/../public/Icons-21.png';
 import gmail from '@/../public/Icons-22.png';
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className={styles.footer}>
       {/* Logo y nombre */}
       <div className={styles.logo}>
         <Image src={logo} alt="Nathaly Hellström" />
+      </div>
+
+      <div className={styles.rights}>
+        <p>{t("rights")}</p>
       </div>
 
       {/* Redes sociales */}

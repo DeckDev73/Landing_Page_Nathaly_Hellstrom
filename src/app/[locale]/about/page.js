@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Header from "@/app/[locale]/components/header";
+import Footer from "@/app/[locale]/components/footer";
 import TimelineClient from "./timelineClient.jsx";
 
 
@@ -41,6 +42,7 @@ export default async function TimelinePage() {
     <>
       <Header />
       <TimelineClient timeline={timeline} seo={seo} />
+      <Footer />
     </>
   );
 }

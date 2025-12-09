@@ -8,14 +8,15 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
+  padding-left: 7rem;
+  padding-right: 9rem;
 }
 
 .timelineLine {
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
+  left: -150px;
+  right: -180px;
   height: 2px;
   background: #a37a5b;
   z-index: 0;
@@ -68,7 +69,7 @@
 .even .connectorUp {
   display: block;
   top: 50%;
-  height: 160px;
+  height: 170px;
   transform: translateY(-100%);
   z-index: 0;
 }
@@ -81,7 +82,7 @@
 .odd .connectorDown {
   display: block;
   top: 50%;
-  height: 160px;
+  height: 170px;
   z-index: 0;
 }
 
@@ -132,7 +133,7 @@
 }
 
 .even .textContent {
-  transform: translateY(-180px);
+  transform: translateY(-190px);
   margin-bottom: 80px;
   z-index: 4;
 }
